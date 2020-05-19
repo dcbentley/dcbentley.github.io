@@ -1,0 +1,86 @@
+/*Body styling*/
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%; /*Full browser height*/
+}
+body {
+    text-align: center;
+    font-family: Montserrat, Helvetica, sans-serif; /*Font from Google*/
+    margin: 50px; /*Set minimum margin for content*/
+    background-color: gray;
+    display: flex;
+}
+
+/*Font and list Styling*/
+h1 {
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+}
+p {
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px;
+}
+ul {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+li {
+    list-style: none; /*Remove bullets*/
+    padding: 10px; /*Add padding for readability*/
+}
+
+/*Link Styling*/
+a {
+    color: white;
+    justify-content: center;
+}
+a:hover{
+    background-color: skyblue;
+}
+
+/*Image formatting*/
+img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+/*Flexbox*/
+.main-grid-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-grid-2 .box {
+    display: flex;
+    width: 50%;
+   
+}
+
+/*Footer Styling*/
+.footer {
+    flex-shrink: 0;
+    padding: 0px;
+    font-size: 10px;
+    color: white;
+    background: skyblue;
+}
+
+/*Mobile / small screen formatting*/
+@media (max-width: 500px) {
+    .maingrid {
+        display: block;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
