@@ -1,17 +1,17 @@
 /* Body styling */
 body {
-    text-align: left;
+    text-align: left; /* Text alignment */
     font-family: Montserrat, Helvetica, sans-serif; /* Font from Google */
     margin: 50px; /* Set minimum margin for content */
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(150, 150, 150); /* Body background color */
 }
 
 /* Font and list Styling */
 h1 {
-    color: white;
-    font-size: 30px;
-    margin: 0px;
-    padding: 10px;
+    color: white; /* Font color */
+    font-size: 30px; /* Font Size */
+    margin: 0px; /* Margin outside h1 */
+    padding: 10px; /* Padding on the inside of h1 */
 }
 p {
     font-size: 18px;
@@ -34,63 +34,64 @@ a {
     color: white;
 }
 a:hover{
-    background-color: skyblue;
+    background-color: skyblue; /* Pseudo class for link hover action */
 }
 
 /* Image formatting */
 img {
-    width: 200px;
-    margin-left: 50px;
+    width: 200px; /* Limit max width */
+    margin-left: 50px; /* Margin to help center as desired */
     margin-top: 60px;
 }
 
 /* Flexbox for two items */
-.main-grid-2 {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+.main-grid-2 { /* Class selector */
+    display: flex; /* Defines flex content for direct children */
+    justify-content: space-around; /* Evenly distribute negative space */ 
+    flex-direction: row; /* Flex direction */
+    flex-wrap: wrap; /* Wrap from one line to the next */
+    width: 100%; /* Space that flexbox is allowed to use */
 }
-.main-grid-2 .box {
-    width: 50%;
+.main-grid-2 .box { /* Child class */
+    width: 50%; /* Space that flexbox is allowed to use */
 }
-.main-grid-links {
-    display: flex;
+.main-grid-links { /* Define new parent flexbox */
+    display: flex; 
     justify-content: space-around;
     flex-direction: row;
 }
 
 /* Footer Styling */
 .footer {
-    text-align: center;
+    text-align: center; /* Text alignment */
     padding: 0px;
     font-size: 10px;
     color: white;
     background: rgba(0, 0, 0, 0.5);
 }
-/* Fun Button */
+/* Fun Button Styling */
 button {
     background-color: darkgray;
     color: darkred;
 }
-.lights {
+.lights { /* Styling class for toggle to dark mode */
     background-color: black;
     color: white;
 }
 
 /* Mobile / small screen formatting */
-@media (max-width: 650px) {
-    .maingrid {
-        display: block;
+@media (max-width: 600px) { /* Width when the following settings are triggered */
+    .main-grid-2 .box { 
+        width: 100%; /* Allows .box to use 100% of width for content */
     }
     h1 {
-        font-size: 18px;
+        font-size: 18px; /* Reduced h1 size */
+        text-align: center; /* Center h1 */
     }
     p {
-        font-size: 12px;
+        font-size: 12px; /* Reduced paragraph size */
     }
     a {
-        font-size: 12px;
+        font-size: 12px; /* Reduced link size */
     }
 }
