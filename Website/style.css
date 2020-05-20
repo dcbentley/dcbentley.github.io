@@ -1,12 +1,12 @@
-/*Body styling*/
+/* Body styling */
 body {
     text-align: left;
-    font-family: Montserrat, Helvetica, sans-serif; /*Font from Google*/
-    margin: 50px; /*Set minimum margin for content*/
-    background-color: gray;
+    font-family: Montserrat, Helvetica, sans-serif; /* Font from Google */
+    margin: 50px; /* Set minimum margin for content */
+    background-color: rgb(150, 150, 150);
 }
 
-/*Font and list Styling*/
+/* Font and list Styling */
 h1 {
     color: white;
     font-size: 30px;
@@ -14,66 +14,83 @@ h1 {
     padding: 10px;
 }
 p {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
-    padding-bottom: 10px;
+    padding: 10px;
     margin: 0px;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
 }
 ul {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
     padding: 10px;
 }
 li {
-    display: inline;
-    list-style: none; /*Remove bullets*/
-    padding: 10px; /*Add padding for readability*/
+    list-style: none; /* Remove bullets */
+    padding: 10px; /* Add padding for readability */
 }
 
-/*Link Styling*/
+/* Link Styling */
 a {
     color: white;
-    justify-content: center;
 }
 a:hover{
     background-color: skyblue;
 }
 
-/*Image formatting*/
+/* Image formatting */
 img {
     width: 200px;
-    height: 200px;
-    margin: 20px;
+    margin-left: 50px;
+    margin-top: 60px;
 }
 
-/*Flexbox*/
+/* Flexbox for two items */
 .main-grid-2 {
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .main-grid-2 .box {
-   /* display: flex; */
     width: 50%;
-   }
+}
+.main-grid-links {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
 
-/*Footer Styling*/
+/* Footer Styling */
 .footer {
-    flex-shrink: 0;
+    text-align: center;
     padding: 0px;
     font-size: 10px;
     color: white;
-    background: skyblue;
+    background: rgba(0, 0, 0, 0.5);
+}
+/* Fun Button */
+button {
+    background-color: darkgray;
+    color: darkred;
+}
+.lights {
+    background-color: black;
+    color: white;
 }
 
-/*Mobile / small screen formatting*/
-@media (max-width: 500px) {
+/* Mobile / small screen formatting */
+@media (max-width: 650px) {
     .maingrid {
         display: block;
     }
     h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
     p {
-        font-size: 15px;
+        font-size: 12px;
+    }
+    a {
+        font-size: 12px;
     }
 }
