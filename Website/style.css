@@ -67,9 +67,6 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.main-grid-links .box {
-    width: 50%;
-}
 
 /* Footer Styling */
 .footer {
