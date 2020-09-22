@@ -1,22 +1,59 @@
 /* Body styling */
 body {
-    text-align: left; /* Text alignment */
-    font-family: Montserrat, Helvetica, sans-serif; /* Font from Google */
-    margin: 50px; /* Set minimum margin for content */
-    background-color: rgb(150, 150, 150); /* Body background color */
+    text-align: left;
+    /* Text alignment */
+    font-family: Montserrat, Helvetica, sans-serif;
+    /* Font from Google */
+    margin: 50px;
+    /* Set minimum margin for content */
+    background-color: rgb(150, 150, 150);
+    /* Body background color */
 }
 
 /* Font and list Styling */
 h1 {
-    color: white; /* Font color */
-    font-size: 30px; /* Font Size */
-    margin: 0px; /* No margin outside h1 */
-    padding: 10px; /* Padding on the inside of h1 */
-}
-h3 { /* Contact headline */
     color: white;
-    font-size: 20px;
-    margin: 10px 0px 0px 0px; /* Top padding only */
+    /* Font color */
+    font-size: 30px;
+    /* Font Size */
+    margin: 0px;
+    /* No margin outside h1 */
+    padding: 10px;
+    /* Padding on the inside of h1 */
+}
+
+h3 {
+    /* headline */
+    color: white;
+    font-size: 24px;
+    margin: 10px 0px 0px 0px;
+    /* Top padding only */
+    padding: 0px;
+}
+
+h4 {
+    /* headline */
+    color: white;
+    font-size: 18px;
+    margin: 10px 0px 0px 0px;
+    /* Top padding only */
+    padding: 0px;
+}
+
+h5 {
+    /* headline */
+    color: white;
+    font-size: 15px;
+    margin: 10px 0px 0px 0px;
+    /* Top padding only */
+    padding: 0px;
+}
+h6 {
+    /* headline */
+    color: white;
+    font-size: 12px;
+    margin: 10px 0px 0px 0px;
+    /* Top padding only */
     padding: 0px;
 }
 p {
@@ -24,45 +61,66 @@ p {
     color: white;
     padding: 10px;
     margin: 0px;
-    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    background: rgba(0, 0, 0, 0.5);
+    /* Transparent background */
 }
+
 ul {
-    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    background: rgba(0, 0, 0, 0.5);
+    /* Transparent background */
     padding: 10px;
 }
+
 li {
-    list-style: none; /* Remove bullets */
-    padding: 10px; /* Add padding for readability */
+    list-style: none;
+    /* Remove bullets */
+    padding: 10px;
+    /* Add padding for readability */
 }
 
 /* Link Styling */
 a {
     color: white;
 }
-a:hover{
-    background-color: skyblue; /* Pseudo class for link hover action */
+
+a:hover {
+    background-color: skyblue;
+    /* Pseudo class for link hover action */
 }
 
 /* Image formatting */
 img {
-    width: 225px; /* Limit max width */
-    margin-left: 50px; /* Margin to help center as desired */
+    width: 225px;
+    /* Limit max width */
+    margin-left: 50px;
+    /* Margin to help center as desired */
     margin-top: 60px;
 }
 
 /* Flexbox for two items */
-.main-grid-2 { /* Class selector */
-    display: flex; /* Defines flex content for direct children */
-    justify-content: space-around; /* Evenly distribute negative space */ 
-    flex-direction: row; /* Flex direction */
-    flex-wrap: wrap; /* Wrap from one line to the next */
-    width: 100%; /* Space that flexbox is allowed to use */
+.main-grid-2 {
+    /* Class selector */
+    display: flex;
+    /* Defines flex content for direct children */
+    justify-content: space-around;
+    /* Evenly distribute negative space */
+    flex-direction: row;
+    /* Flex direction */
+    flex-wrap: wrap;
+    /* Wrap from one line to the next */
+    width: 100%;
+    /* Space that flexbox is allowed to use */
 }
-.main-grid-2 .box { /* Child class */
-    width: 50%; /* Space that flexbox is allowed to use */
+
+.main-grid-2 .box {
+    /* Child class */
+    width: 50%;
+    /* Space that flexbox is allowed to use */
 }
-.main-grid-links { /* Define new parent flexbox */
-    display: flex; 
+
+.main-grid-links {
+    /* Define new parent flexbox */
+    display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
@@ -70,36 +128,55 @@ img {
 
 /* Footer Styling */
 .footer {
-    text-align: center; /* Text alignment */
+    text-align: center;
+    /* Text alignment */
     padding: 0px;
     font-size: 10px;
     color: white;
     background: rgba(0, 0, 0, 0.5);
 }
+
 /* Fun Button Styling */
 button {
     background-color: darkgray;
     color: darkred;
 }
-.lights { /* Styling class for toggle to dark mode */
+
+.lights {
+    /* Styling class for toggle to dark mode */
     background-color: black;
     color: white;
 }
 
 /* Mobile / small screen formatting */
-@media (max-width: 650px) { /* Width when the following settings are triggered */
-    .main-grid-2 .box { 
-        width: 100%; /* Allows .box to use 100% of width for content */
+@media (max-width: 650px) {
+
+    /* Width when the following settings are triggered */
+    .main-grid-2 .box {
+        width: 100%;
+        /* Allows .box to use 100% of width for content */
     }
-    h1, h3 {
-        font-size: 18px; /* Reduced h1 & h3 size */
-        text-align: center; /* Center h1 & h3 */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 18px;
+        /* Reduced headline font size */
+        text-align: center;
+        /* Center h1 & h3 */
         color: white;
     }
+
     p {
-        font-size: 12px; /* Reduced paragraph size */
+        font-size: 12px;
+        /* Reduced paragraph size */
     }
+
     a {
-        font-size: 12px; /* Reduced link size */
+        font-size: 12px;
+        /* Reduced link size */
     }
 }
